@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-custom">
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/">Webfolio</Link>
 
