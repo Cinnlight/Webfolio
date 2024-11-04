@@ -12,7 +12,7 @@ const Footer = () => {
     const handleShow = () => setShow(true);
 
     return (
-        <footer className="bg-dark text-white text-center py-4">
+        <footer className="footer-custom">
             {/* Contact Me Button */}
             <div className="container">
                 <p>© 2024 Cinnlight</p>
