@@ -19,17 +19,69 @@ body {
   
 
 // Description: Custom theme variables for the app to override Bootstrap variables
-$background-color: #1e1e1e;
-$primary-color: #fafafa;
-$accent-color: #6cc644;
+$background-color: #0F1020;
+$primary-color: #EFC3F5;
+$accent-color: #7353BA;
 $highlight-color: #ffb6c1;
-$card-bg-color: #2b2b2b;
+$card-bg-color: #2F195F;
 $border-radius: 12px;
 
-// Override Bootstrap variables if needed
+// $background-color: #1e1e1e;
+// $primary-color: #fafafa;
+// $accent-color: #6cc644;
+// $highlight-color: #ffb6c1;
+// $card-bg-color: #2b2b2b;
+// $border-radius: 12px;
+
+// Override Bootstrap Variables
 $body-bg: $background-color;
 $body-color: $primary-color;
 $link-color: $accent-color;
 $btn-border-radius: $border-radius;
 
 @import "bootstrap/scss/bootstrap";
+
+
+// Navbar custom styles using custom theme variables
+.navbar-custom {
+    background-color: $background-color; /* Dark background */
+    color: $primary-color; /* Primary color for text */
+
+    .navbar-brand,
+    .nav-link {
+        color: $accent-color; /* Accent color for links */
+        transition: color 0.3s ease;
+    }
+
+    .navbar-brand:hover,
+    .nav-link:hover {
+        color: $highlight-color; /* Highlight color on hover */
+    }
+
+    .navbar-toggler {
+        border-color: $accent-color;
+    }
+    
+
+}
+
+// Footer Custom Styles
+.footer-custom a {
+    color: $accent-color;
+    margin: 0 0.5rem; /* Spacing between icons */
+    font-size: 1.2rem;
+    
+    &:hover {
+        color: $highlight-color;
+    }
+}
+
+// Contact Form Modal Styles
+.modal-header .btn-close {
+    filter: invert(1);  /* Inverts color, making it white */
+    opacity: 0.7;
+}
+
+.modal-header .btn-close:hover {
+    opacity: 1;
+}
