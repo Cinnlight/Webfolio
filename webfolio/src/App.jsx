@@ -8,11 +8,13 @@ import './styles/custom-theme.scss';
 function App() {
   return (
     <>
+    <div className="d-flex flex-column min-vh-100">
       <Navbar />
-      <main>
+      <main className="app-main flex-grow-1">
         <Outlet /> {/* Renders the current page */}
       </main>
       <Footer />
+    </div>
     </>
   );
 }
