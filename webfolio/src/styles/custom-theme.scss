@@ -24,6 +24,7 @@ $primary-color: #EFC3F5;
 $accent-color: #7353BA;
 $highlight-color: #ffb6c1;
 $card-bg-color: #2F195F;
+$page-body-color: #5A5276;
 $border-radius: 12px;
 
 // Override Bootstrap Variables
@@ -33,6 +34,16 @@ $link-color: $accent-color;
 $btn-border-radius: $border-radius;
 
 @import "bootstrap/scss/bootstrap";
+
+// Background overlay for pages
+.dark-overlay {
+    background-color: rgba(0, 0, 0, 0.6);  /* Dark translucent black */
+    color: $primary-color;  /* Ensures the text color contrasts well */
+    padding: 2rem;           /* Adds some padding around the text */
+    border-radius: 12px;     /* Softens the edges for a modern look */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);  /* Adds depth with a shadow */
+}
+
 
 
 // Navbar custom styles using custom theme variables
@@ -60,9 +71,39 @@ $btn-border-radius: $border-radius;
 
 // Body Custom Styles
 .app-main {
-    background-color: $primary-color;
-    color: $background-color;
+    min-height: 100vh;
+    background: linear-gradient(135deg, $accent-color, $highlight-color); /* Customize gradient colors */
+    color: $primary-color;
+    position: relative; /* Needed for absolute positioning of circles */
+    overflow: hidden; /* Hide any overflowing circles */
+
+        /* Circle 1 */
+    &::before {
+        content: "";
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent white */
+        border-radius: 50%;
+        top: -100px;
+        left: -100px;
+    }
+    
+        /* Circle 2 */
+    &::after {
+        content: "";
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        background-color: rgba(255, 255, 255, 0.1); /* Lighter semi-transparent white */
+        border-radius: 50%;
+        bottom: -150px;
+        right: -150px;
+    }
 }
+
+
+
 
 // Footer Custom Styles
 .footer-custom a {
@@ -84,4 +125,19 @@ $btn-border-radius: $border-radius;
 
 .modal-header .btn-close:hover {
     opacity: 1;
+}
+
+
+// Media Query for smaller screens
+@media (max-width: 768px) {
+    .app-main::before,
+    .app-main::after {
+        width: 300px;
+        height: 300px;
+    }
+
+    .dark-overlay {
+        padding: 1rem;
+        width: 90%; 
+    }
 }
