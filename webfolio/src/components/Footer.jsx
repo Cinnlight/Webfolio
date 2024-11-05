@@ -20,8 +20,8 @@ const Footer = () => {
                     <Button variant="outline-light" onClick={handleShow}>
                         Contact Me
                     </Button>
+                    {/* Github Icon and Link */}
                     <a
-                        {/* Github Icon and Link */}
                         href="https://github.com/cinnlight"
                         target="_blank"
                         rel="noopener noreferrer"
