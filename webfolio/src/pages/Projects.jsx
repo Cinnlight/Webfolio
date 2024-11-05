@@ -6,7 +6,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function Projects() {
     return (
-        <Container className="portfolio my-5 project-body">
+        <Container className="portfolio my-5 project-body dark-overlay">
             <Row className="g-4">
                 <Col xs={12} sm={6} md={4}>
                     <ProjectCard
