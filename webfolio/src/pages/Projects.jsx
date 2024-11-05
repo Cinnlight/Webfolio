@@ -1,7 +1,14 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
-import placeholderIcon from "../assets/placeholder-icon.jpg";
 import { Container, Row, Col } from "react-bootstrap";
+
+// Asset Imports //
+// ArcadeHype
+import placeholderIcon from "../assets/placeholder-icon.jpg";
+import ArcadeHypeDarkMode from "../assets/project-assets/ArcadeHype-DarkMode.png"
+import ArcadeHypeLightMode from "../assets/project-assets/ArcadeHype-LightMode.png"
+import ArcadeHypeMobile from "../assets/project-assets/ArcadeHype-Mobile.png"
+import ArcadeHypeGif from "../assets/project-assets/ArcadeHypeGif.gif"
 
 
 function Projects() {
@@ -10,10 +17,12 @@ function Projects() {
             <Row className="g-4">
                 <Col xs={12} sm={6} md={4}>
                     <ProjectCard
-                        title="Project 1"
-                        description="This is a project description."
-                        repoLink="https://github.com/Cinnlight/employee-tracker"
-                        image={placeholderIcon}
+                        title="ArcadeHype!"
+                        description="One stop shop for game release tracking."
+                        repoLink="https://github.com/Cinnlight/ArcadeHype"
+                        image={ArcadeHypeGif}
+                        images={[ArcadeHypeDarkMode, ArcadeHypeLightMode, ArcadeHypeMobile, ArcadeHypeGif]}
+                        className="dark-overlay"
                     />
                 </Col>
                 <Col xs={12} sm={6} md={4}>
@@ -22,6 +31,7 @@ function Projects() {
                         description="This is a project description."
                         repoLink="https://github.com/Cinnlight/employee-tracker"
                         image={placeholderIcon}
+                        images={[placeholderIcon]}
                     />
                 </Col>
                 <Col xs={12} sm={6} md={4}>            
@@ -30,6 +40,7 @@ function Projects() {
                         description="This is a project description."
                         repoLink="https://github.com/Cinnlight/employee-tracker"
                         image={placeholderIcon}
+                        images={[placeholderIcon]}
                     />
                 </Col>
                 <Col xs={12} sm={6} md={4}>
@@ -38,6 +49,7 @@ function Projects() {
                         description="This is a project description."
                         repoLink="https://github.com/Cinnlight/employee-tracker"
                         image={placeholderIcon}
+                        images={[placeholderIcon]}
                     />
                 </Col>
                 <Col xs={12} sm={6} md={4}>
@@ -46,6 +58,7 @@ function Projects() {
                         description="This is a project description."
                         repoLink="https://github.com/Cinnlight/employee-tracker"
                         image={placeholderIcon}
+                        images={[placeholderIcon]}
                     />
                 </Col>
                 <Col xs={12} sm={6} md={4}>
@@ -54,6 +67,7 @@ function Projects() {
                         description="This is a project description."
                         repoLink="https://github.com/Cinnlight/employee-tracker"
                         image={placeholderIcon}
+                        images={[placeholderIcon]}
                     />
                 </Col>
             </Row>
