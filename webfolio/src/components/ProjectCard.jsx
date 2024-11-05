@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Card, Modal, Carousel, Button } from 'react-bootstrap';
 import { FaGithub } from 'react-icons/fa';
-import '../styles/ProjectCard.css';
+import '../styles/custom-theme.scss';
 
 
 const ProjectCard = ({ title, description, repoLink, image, images = [] }) => {
