@@ -71,7 +71,6 @@ $btn-border-radius: $border-radius;
 
 // Body Custom Styles
 .app-main {
-    min-height: 100vh;
     background: linear-gradient(135deg, $accent-color, $highlight-color); /* Customize gradient colors */
     color: $primary-color;
     position: relative; /* Needed for absolute positioning of circles */
