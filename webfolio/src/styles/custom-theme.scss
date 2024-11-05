@@ -86,6 +86,7 @@ $btn-border-radius: $border-radius;
         border-radius: 50%;
         top: -100px;
         left: -100px;
+        pointer-events: none;
     }
     
         /* Circle 2 */
@@ -98,6 +99,7 @@ $btn-border-radius: $border-radius;
         border-radius: 50%;
         bottom: -150px;
         right: -150px;
+        pointer-events: none;
     }
 }
 
@@ -124,6 +126,18 @@ $btn-border-radius: $border-radius;
 
 .modal-header .btn-close:hover {
     opacity: 1;
+}
+
+// Home Page Custom Styles
+.dark-overlay .row {
+    padding: 1rem;
+    z-index: 2;
+}
+
+.dark-overlay img {
+    max-width: 100%; /* Ensure it stays responsive */
+    border: 3px solid $highlight-color; /* Optional: border around the image */
+    z-index: 2;
 }
 
 
