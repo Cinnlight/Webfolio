@@ -12,25 +12,24 @@ const Footer = () => {
     const handleShow = () => setShow(true);
 
     return (
-        <footer className="footer-custom">
+        <footer className="footer-custom d-flex justify-content-center align-items-center">
             {/* Contact Me Button */}
-            <div className="container">
+            <div className="container d-flex flex-column align-items-center text-center">
                 <p>© 2024 Cinnlight</p>
                 <span className="me-3">
                     <Button variant="outline-light" onClick={handleShow}>
                         Contact Me
                     </Button>
+                    <a
+                        {/* Github Icon and Link */}
+                        href="https://github.com/cinnlight"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="github-icon"
+                    >
+                        <FaGithub size={30} />
+                    </a>
                 </span>
-
-                {/* GitHub Link */}
-                <a
-                    href="https://github.com/cinnlight"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="github-icon"
-                >
-                    <FaGithub size={30} />
-                </a>
 
                 {/* Contact Modal */}
                 <Modal show={show} onHide={handleClose}>
