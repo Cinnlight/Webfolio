@@ -3,7 +3,7 @@ import { Button, Modal } from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
 import ContactForm from './ContactForm';
 import { useState } from 'react';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
     const [show, setShow] = useState(false);
@@ -14,9 +14,8 @@ const Footer = () => {
     return (
         <footer className="footer-custom d-flex justify-content-center align-items-center">
             {/* Contact Me Button */}
-            <div className="container d-flex flex-column align-items-center text-center">
-                <p>© 2024 Cinnlight</p>
-                <span className="me-3">
+            <div className="container d-flex flex-column align-items-center text-center mt-3">
+                <span>
                     <Button variant="outline-light" onClick={handleShow}>
                         Contact Me
                     </Button>
@@ -29,7 +28,16 @@ const Footer = () => {
                     >
                         <FaGithub size={30} />
                     </a>
+                    <a
+                    href="https://www.linkedin.com/in/hailey-smith-b770b9336/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="linkedin-icon"
+                    >
+                    <FaLinkedin size={30} />
+                    </a>
                 </span>
+                <p className="mt-1 me-2">© 2024 | Cinnlight</p>
 
                 {/* Contact Modal */}
                 <Modal show={show} onHide={handleClose}>
