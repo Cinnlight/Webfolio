@@ -38,10 +38,12 @@ https://cinnfolio.netlify.app/
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the site in development mode.
 
-![image](https://github.com/user-attachments/assets/0830ca66-9b60-4c65-8099-57577427f865)
-
 
 ## Contact
 
 Feel free to reach out with any questions or collaboration ideas!  
 📧 Email: [cinnlight@gmail.com](mailto:cinnlight@gmail.com)
+
+
+## Preview
+![image](https://github.com/user-attachments/assets/0830ca66-9b60-4c65-8099-57577427f865)
