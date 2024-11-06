@@ -20,6 +20,8 @@ function Projects() {
                         title="ArcadeHype!"
                         description="One stop shop for game release tracking."
                         repoLink="https://github.com/Cinnlight/ArcadeHype"
+                        deployLink="https://cinnlight.github.io/ArcadeHype/"
+                        techStack="HTML, CSS, TailwindCSS, JavaScript"
                         image={ArcadeHypeGif}
                         images={[ArcadeHypeDarkMode, ArcadeHypeLightMode, ArcadeHypeMobile, ArcadeHypeGif]}
                         className="dark-overlay"
