@@ -2,6 +2,9 @@
 
 Welcome to **Webfolio**, a personal web application built to showcase my portfolio of web projects and share my journey as a web developer. This site is designed with a focus on responsiveness, visual appeal, and performance.
 
+## Deployed Site
+https://cinnfolio.netlify.app/
+
 ## Features
 
 - **Dynamic Hero Section**: Features an introduction, professional profile image, and navigation links to key sections.
