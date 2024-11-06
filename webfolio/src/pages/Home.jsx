@@ -14,8 +14,8 @@ function Home() {
                         Hi! I'm Hailey, a passionate web developer with a love for creating visually
                         captivating and functional web experiences. I also take pride in clean and modern code bases. Take a look around to see my projects and learn more about me.
                     </p>
-                    <Link to="/projects">
-                        <button className="btn btn-primary mt-3    hero-button">View My Projects</button>
+                    <Link to="/projects" className="hero-button-container">
+                        <button className="btn btn-primary mt-3 mb-5     hero-button">View My Projects</button>
                     </Link>
                 </div>
 
