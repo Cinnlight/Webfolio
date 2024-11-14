@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Card, Modal, Carousel, Button } from 'react-bootstrap';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaGlobe } from 'react-icons/fa';
 import '../styles/custom-theme.scss';
 
 
-const ProjectCard = ({ title, description, repoLink, image, images = [] }) => {
+const ProjectCard = ({ title, description, repoLink, deployLink, image, techStack,  images = [] }) => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -28,6 +28,14 @@ const ProjectCard = ({ title, description, repoLink, image, images = [] }) => {
                 >
                     <FaGithub size={24} />
                 </a>
+                <a 
+                href={deployLink} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="globe-icon ms-1"
+                >
+                    <FaGlobe size={24} />
+                </a>
             </Card.Body>
         </Card>
 
@@ -38,7 +46,7 @@ const ProjectCard = ({ title, description, repoLink, image, images = [] }) => {
             </Modal.Header>
             <Modal.Body>
                 <p>{description}</p>
-
+                <p className="text-muted ">Utilizes: {techStack}</p>
                 {/* Image Carousel */}
                 <Carousel>
                     {Array.isArray(images) && images.map((image, index) => (
