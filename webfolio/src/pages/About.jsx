@@ -1,5 +1,3 @@
-
-
 function About() {
     return (
         <div className="dark-overlay mx-auto w-75 mt-5 mb-5">
