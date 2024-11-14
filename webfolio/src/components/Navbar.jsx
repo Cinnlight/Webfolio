@@ -1,8 +1,15 @@
 import { Link } from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from 'react';
+import ContactForm from './ContactForm';
+import { Modal } from 'react-bootstrap';
 
 function Navbar() {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
         <nav className="navbar navbar-expand-lg navbar-custom">
             <div className="container-fluid">
@@ -31,8 +38,24 @@ function Navbar() {
                         <li className="nav-item">
                             <Link className="nav-link" to="/projects">Projects</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/resume">Resume</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" onClick={handleShow}>Contact</Link>
+                        </li>
                     </ul>
                 </div>
+
+                {/* Contact Modal */}
+                <Modal show={show} onHide={handleClose}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Contact Me</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <ContactForm handleClose={handleClose} />
+                    </Modal.Body>
+                </Modal>
             </div>
         </nav>
     );
