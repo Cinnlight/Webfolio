@@ -15,13 +15,13 @@ import ArcadeHypeGif from "../assets/project-assets/ArcadeHypeGif.gif"
 import FantasyFighterCombatGif from "../assets/project-assets/FantasyFighter-combatGif.gif"
 import FantasyFighterCombat from "../assets/project-assets/FantasyFighter-combat.png"
 import FantasyFighterLevels from "../assets/project-assets/FantasyFighter-levels.png"
-import FantasyFighterLogin from "../assets/project-assets/FantasyFighter-login"
+import FantasyFighterLogin from "../assets/project-assets/FantasyFighter-login.png"
 
 // HyruleCompendium
-import HyruleCompendiumHome from "../assets/project-assets/HyruleCompendium-home"
-import HyruleCompendiumLogin from "../assets/project-assets/HyruleCompendium-login"
-import HyruleCompendiumPage from "../assets/project-assets/HyruleCompendium-page"
-import HyruleCompendiumVerify from "../assets/project-assets/HyruleCompendium-verify"
+import HyruleCompendiumHome from "../assets/project-assets/HyruleCompendium-home.png"
+import HyruleCompendiumLogin from "../assets/project-assets/HyruleCompendium-login.png"
+import HyruleCompendiumPage from "../assets/project-assets/HyruleCompendium-page.png"
+import HyruleCompendiumVerify from "../assets/project-assets/HyruleCompendium-verify.png"
 
 
 function Projects() {
