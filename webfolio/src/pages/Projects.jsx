@@ -29,9 +29,9 @@ import SocialMediaAPIRouteGif from "../assets/project-assets/SocialMediaAPI-rout
 import SocialMediaAPIRoutes from "../assets/project-assets/SocialMediaAPI-routes.png"
 
 // GitHub Dev Search
-import GitHubDevSearchSaved from "../assets/project-assets/GithubDevSearch-Saved.png"
-import GitHubDevSearchSaveGif from "../assets/project-assets/GithubDevSearch-saveGif.gif"
-import GitHubDevSearchSearch from "../assets/project-assets/GithubDevSearch-Search.png"
+import GitHubDevSearchSaved from "../assets/project-assets/GitHubDevSearch-Saved.png"
+import GitHubDevSearchSaveGif from "../assets/project-assets/GitHubDevSearch-saveGif.gif"
+import GitHubDevSearchSearch from "../assets/project-assets/GitHubDevSearch-Search.png"
 
 // Employee Tracker CLI App
 import EmployeeTrackerAddEmployee from "../assets/project-assets/EmployeeTracker-AddEmployee.png"
