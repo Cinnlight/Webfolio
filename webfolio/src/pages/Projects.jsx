@@ -28,6 +28,15 @@ import SocialMediaAPIInsomnia from "../assets/project-assets/SocialMediaAPI-inso
 import SocialMediaAPIRouteGif from "../assets/project-assets/SocialMediaAPI-routeGIF.gif"
 import SocialMediaAPIRoutes from "../assets/project-assets/SocialMediaAPI-routes.png"
 
+// GitHub Dev Search
+import GitHubDevSearchSaved from "../assets/project-assets/GithubDevSearch-Saved.png"
+import GitHubDevSearchSaveGif from "../assets/project-assets/GithubDevSearch-saveGif.gif"
+import GitHubDevSearchSearch from "../assets/project-assets/GithubDevSearch-Search.png"
+
+// Employee Tracker CLI App
+import EmployeeTrackerAddEmployee from "../assets/project-assets/EmployeeTracker-AddEmployee.png"
+import EmployeeTrackerMenu from "../assets/project-assets/EmployeeTracker-menu.png"
+
 
 function Projects() {
     return (
@@ -59,10 +68,10 @@ function Projects() {
                 <Col xs={12} sm={6} md={4}>            
                     <ProjectCard
                         title="Hyrule Compendium"
-                        description="A wiki-like social experience for the first The Legend of Zelda game."
+                        description="Wiki-like social experience for the first The Legend of Zelda game."
                         repoLink="https://github.com/Cinnlight/Hyrule-Compendium"
                         deployLink="https://hyrule-compendium.magicapps.dev/"
-                        techStack="PERN stack, Typescript, CSS"
+                        techStack="PERN stack, TypeScript, CSS"
                         image={HyruleCompendiumHome}
                         images={[HyruleCompendiumPage, HyruleCompendiumLogin, HyruleCompendiumVerify]}
                     />
@@ -70,29 +79,31 @@ function Projects() {
                 <Col xs={12} sm={6} md={4}>
                     <ProjectCard
                         title="Social Media API"
-                        description="An API that supports a spread of classic social media actions."
+                        description="API that supports a spread of classic social media actions."
                         repoLink="https://github.com/Cinnlight/Social-Media-API"
-                        techStack="MERN stack, Typescript"
+                        techStack="MERN stack, JavaScript"
                         image={SocialMediaAPIRouteGif}
                         images={[SocialMediaAPIRoutes, SocialMediaAPIInsomnia, SocialMediaAPIRouteGif]}
                     />
                 </Col>
                 <Col xs={12} sm={6} md={4}>
                     <ProjectCard
-                        title="Kanban Board with Auth"
-                        description="This is a project description."
+                        title="Employee Tracker CLI App"
+                        description="Activity board using JWT authorization to support multiple users."
                         repoLink="https://github.com/Cinnlight/employee-tracker"
-                        image={placeholderIcon}
-                        images={[placeholderIcon]}
+                        techStack="PERN stack, TypeScript"
+                        image={EmployeeTrackerMenu}
+                        images={[EmployeeTrackerAddEmployee, EmployeeTrackerMenu]}
                     />
                 </Col>
                 <Col xs={12} sm={6} md={4}>
                     <ProjectCard
-                        title="Project 6"
+                        title="GitHub Dev Search"
                         description="This is a project description."
-                        repoLink="https://github.com/Cinnlight/employee-tracker"
-                        image={placeholderIcon}
-                        images={[placeholderIcon]}
+                        repoLink="https://github.com/Cinnlight/Github-Dev-Search"
+                        techStack="PERN stack, TypeScript"
+                        image={GitHubDevSearchSaveGif}
+                        images={[GitHubDevSearchSaved, GitHubDevSearchSearch, GitHubDevSearchSaveGif]}
                     />
                 </Col>
             </Row>
