@@ -1,10 +1,9 @@
-
+import MyResume from "../assets/HaileyResume2025.pdf";
 
 function Resume() {
     return (
-        <div className="dark-overlay mx-auto w-75 mt-5 mb-5">
-            <h1>Resume</h1>
-            <p>Webfolio is a simple web application that showcases a portfolio of web projects.</p>
+        <div className="resume-container mx-auto mt-5 mb-5">
+             <iframe src={MyResume} title="Hailey Resume 2025" width="100%" height="800px" style={{ border: 'none' }} ></iframe>
         </div>
     );
 }
