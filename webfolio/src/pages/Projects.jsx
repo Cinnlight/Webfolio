@@ -23,6 +23,11 @@ import HyruleCompendiumLogin from "../assets/project-assets/HyruleCompendium-log
 import HyruleCompendiumPage from "../assets/project-assets/HyruleCompendium-page.png"
 import HyruleCompendiumVerify from "../assets/project-assets/HyruleCompendium-verify.png"
 
+// Social Media API
+import SocialMediaAPIInsomnia from "../assets/project-assets/SocialMediaAPI-insomnia.png"
+import SocialMediaAPIRouteGif from "../assets/project-assets/SocialMediaAPI-routeGIF.gif"
+import SocialMediaAPIRoutes from "../assets/project-assets/SocialMediaAPI-routes.png"
+
 
 function Projects() {
     return (
@@ -45,6 +50,8 @@ function Projects() {
                         title="Fantasy Fighter"
                         description="A classic turn-based RPG for the web."
                         repoLink="https://github.com/MagicInUse/Fantasy-Fighter"
+                        deployLink="https://project-2-c43n.onrender.com/"
+                        techStack="PERN stack, TypeScript, Bootstrap"
                         image={FantasyFighterCombatGif}
                         images={[FantasyFighterLogin, FantasyFighterLevels, FantasyFighterCombat, FantasyFighterCombatGif]}
                     />
@@ -52,24 +59,27 @@ function Projects() {
                 <Col xs={12} sm={6} md={4}>            
                     <ProjectCard
                         title="Hyrule Compendium"
-                        description="This is a project description."
+                        description="A wiki-like social experience for the first The Legend of Zelda game."
                         repoLink="https://github.com/Cinnlight/Hyrule-Compendium"
+                        deployLink="https://hyrule-compendium.magicapps.dev/"
+                        techStack="PERN stack, Typescript, CSS"
                         image={HyruleCompendiumHome}
                         images={[HyruleCompendiumPage, HyruleCompendiumLogin, HyruleCompendiumVerify]}
                     />
                 </Col>
                 <Col xs={12} sm={6} md={4}>
                     <ProjectCard
-                        title="Project 4"
-                        description="This is a project description."
-                        repoLink="https://github.com/Cinnlight/employee-tracker"
-                        image={placeholderIcon}
-                        images={[placeholderIcon]}
+                        title="Social Media API"
+                        description="An API that supports a spread of classic social media actions."
+                        repoLink="https://github.com/Cinnlight/Social-Media-API"
+                        techStack="MERN stack, Typescript"
+                        image={SocialMediaAPIRouteGif}
+                        images={[SocialMediaAPIRoutes, SocialMediaAPIInsomnia, SocialMediaAPIRouteGif]}
                     />
                 </Col>
                 <Col xs={12} sm={6} md={4}>
                     <ProjectCard
-                        title="Project 5"
+                        title="Kanban Board with Auth"
                         description="This is a project description."
                         repoLink="https://github.com/Cinnlight/employee-tracker"
                         image={placeholderIcon}
