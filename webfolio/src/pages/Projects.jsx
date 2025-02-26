@@ -99,7 +99,7 @@ function Projects() {
                 <Col xs={12} sm={6} md={4}>
                     <ProjectCard
                         title="GitHub Dev Search"
-                        description="This is a project description."
+                        description="Mini app using the GitHub API to add or remove developers from a saved list."
                         repoLink="https://github.com/Cinnlight/Github-Dev-Search"
                         techStack="PERN stack, TypeScript"
                         image={GitHubDevSearchSaveGif}
